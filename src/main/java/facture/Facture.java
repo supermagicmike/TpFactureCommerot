@@ -62,8 +62,9 @@ public class Facture {
    
    public void print(PrintStream out, float tva) {
         for (LigneFacture l :ligne){
-           System.out.println(ligne.toString());
+           out.println(ligne.toString());
        }
+        out .println("TVA : "+ tva);
    }
    
 }
